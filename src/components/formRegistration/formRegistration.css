@@ -26,3 +26,6 @@
     background: #0062cc;
     color: #fff;
 }
+input[type="text"], input[type="password"]{
+    margin-bottom: 0;
+}
