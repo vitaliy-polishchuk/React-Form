@@ -7,7 +7,7 @@ import {registerUser} from "../../App";
 
 
 const SignInSchema = Yup.object().shape({
-    name: Yup.string().max(15, 'Must be 15 characters or less').required('Required'),
+    email: Yup.string().email('Invalid email').required('Required'),
     number: Yup.string().matches(/^[0-9]*$/).required('Required'),
     password: Yup.string().min(2, 'Too Short!').max(20, 'Too Long!').required('Required'),
     confirm: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match')
@@ -16,7 +16,7 @@ const SignInSchema = Yup.object().shape({
 
 const FormRegistration = () => {
     let initialValues = {
-        name: '',
+        email: '',
         number: '',
         password: '',
         confirm: '',
@@ -43,9 +43,9 @@ const FormRegistration = () => {
                                         <div className="col-md-6">
 
                                             <div className="form-group">
-                                                <Field name="name" className="form-control p-4"
-                                                       placeholder="Your Name *"/>
-                                                {errors.name && touched.name && <div>{errors.name}</div>}
+                                                <Field name="email" className="form-control p-4"
+                                                       placeholder="Your Email *"/>
+                                                {errors.email && touched.email && <div>{errors.email}</div>}
 
                                             </div>
                                             <div className="form-group">
