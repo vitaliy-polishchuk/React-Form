@@ -69,8 +69,10 @@ const FormRegistration = () => {
                                         </div>
                                     </div>
                                     <input type="submit" value="Submit" className="btn btn-primary"/>
-                                    <div className='my-3'><NavLink to='/login'>Have already account? Login</NavLink>
+                                    <div className='my-3'><NavLink to='login'>Have already account? Login</NavLink>
                                     </div>
+                                    <div className='my-4'><NavLink to='api'>Hooks API calling Code</NavLink></div>
+                                    <div className='my-4'><NavLink to='test'>Test link</NavLink></div>
                                 </div>
                             </Form>
                         )

@@ -5,6 +5,9 @@ import FormLogin from "../formLogin/formLogin";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import ForgotPass from "../forgotPass/forgotPass";
 import Privat from "../privat/privat";
+import GithubCommit from "../githubCommit/githubCommit";
+import Test from "../test/test";
+
 
 
 const Container = (props) => {
@@ -16,6 +19,9 @@ const Container = (props) => {
                     <Route path='/login' component={FormLogin}/>
                     <Route path='/fpass' component={ForgotPass}/>
                     <Route path='/privat' component={Privat}/>
+                    <Route path='/api' component={GithubCommit}/>
+                    <Route path='/test' component={Test}/>
+
                 </Switch>
             </div>
         </BrowserRouter>
