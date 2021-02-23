@@ -1,0 +1,18 @@
+.img-thumbnail{
+    width: 5%;
+
+}
+.photos:first-letter{
+    text-transform: capitalize;
+}
+
+.headertop{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width:1110px;
+    height: 65px;
+    background-color: lightcoral;
+
+
+}

@@ -7,6 +7,7 @@ import ForgotPass from "../forgotPass/forgotPass";
 import Privat from "../privat/privat";
 import GithubCommit from "../githubCommit/githubCommit";
 import Test from "../test/test";
+import Photos from "../photos/photos";
 
 
 
@@ -21,7 +22,7 @@ const Container = (props) => {
                     <Route path='/privat' component={Privat}/>
                     <Route path='/api' component={GithubCommit}/>
                     <Route path='/test' component={Test}/>
-
+                    <Route path='/photos' component={Photos}/>
                 </Switch>
             </div>
         </BrowserRouter>
