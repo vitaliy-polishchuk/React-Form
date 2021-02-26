@@ -5,6 +5,8 @@ import {Formik, Form, Field} from 'formik';
 import * as Yup from 'yup';
 import {registerUser} from "../../App";
 
+import Modalapp from "../modal/modal";
+
 
 const SignInSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Required'),
@@ -82,9 +84,8 @@ const FormRegistration = () => {
                 </Formik>
 
             </div>
-
+            <Modalapp/>
         </div>
-
     );
 }
 

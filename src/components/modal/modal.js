@@ -1,7 +1,10 @@
-import React from 'react';
-import {useState} from "react";
+import React, {useState}  from 'react';
 
-const Modal = (props) => {
+import '../modal/style.css'
+import {Button, Modal} from "react-bootstrap";
+
+
+const Modalapp = (props) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -9,25 +12,26 @@ const Modal = (props) => {
 
   return (
       <>
-        <button variant="primary" onClick={handleShow}>
-          Launch demo modal
-        </button>
+          <Button variant="primary" onClick={handleShow}>
+              Launch demo modal
+          </Button>
 
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <button variant="secondary" onClick={handleClose}>
-              Close
-            </button>
-            <button variant="primary" onClick={handleClose}>
-              Save Changes
-            </button>
-          </Modal.Footer>
-        </Modal>
+          <Modal show={show} onHide={handleClose} animation={false}>
+              <Modal.Header closeButton>
+                  <Modal.Title>Modal heading</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+              <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                      Close
+                  </Button>
+                  <Button variant="primary" onClick={handleClose}>
+                      Save Changes
+                  </Button>
+              </Modal.Footer>
+          </Modal>
       </>
   );
 }
-export default Modal
+
+export default Modalapp
