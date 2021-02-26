@@ -74,6 +74,7 @@ const FormRegistration = () => {
                                     <div className='my-4'><NavLink to='api'>Hooks API calling Code</NavLink></div>
                                     <div className='my-4'><NavLink to='test'>Test link</NavLink></div>
                                     <div className='my-4'><NavLink to='photos'>Photos</NavLink></div>
+
                                 </div>
                             </Form>
                         )
