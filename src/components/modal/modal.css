@@ -4,3 +4,6 @@ button{
     border-radius: 3px;
     background-color: lightgray;
 }
+.first_modal_button{
+    margin: 0 auto;
+}

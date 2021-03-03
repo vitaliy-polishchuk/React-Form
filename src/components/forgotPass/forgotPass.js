@@ -20,7 +20,6 @@ const ForgotPass = () => {
     };
     return (
         <div className='container'>
-            <div className='home mx-4 my-3'><NavLink to=''>Home</NavLink></div>
             <div className="form-gap"/>
             <div className="container">
                 <div className="row">

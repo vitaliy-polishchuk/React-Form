@@ -73,9 +73,7 @@ const FormRegistration = () => {
                                     <input type="submit" value="Submit" className="btn btn-primary"/>
                                     <div className='my-3'><NavLink to='login'>Have already account? Login</NavLink>
                                     </div>
-                                    <div className='my-4'><NavLink to='api'>Hooks API calling Code</NavLink></div>
-                                    <div className='my-4'><NavLink to='test'>Test link</NavLink></div>
-                                    <div className='my-4'><NavLink to='photos'>Photos</NavLink></div>
+
 
                                 </div>
                             </Form>
@@ -84,7 +82,7 @@ const FormRegistration = () => {
                 </Formik>
 
             </div>
-            <Modalapp/>
+
         </div>
     );
 }

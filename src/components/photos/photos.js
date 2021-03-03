@@ -18,7 +18,7 @@ const Photos = (props) => {
 
 
     return <div className="component-photos">
-      <div className='headertop'><div className='home mx-4 my-3 h3'><NavLink to=''>Home</NavLink></div></div>
+
        <div className='border'>
 
          {data.map((item) =>

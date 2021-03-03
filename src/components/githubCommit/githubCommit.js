@@ -41,7 +41,6 @@ const GithubCommit = (props) => {
 
     return (
         <div className='component-github-commit'>
-            <div className='home h3 bg-dark p-3 text-center '><NavLink to=''>Home</NavLink></div>
 
             {
                 isLoading
@@ -50,7 +49,7 @@ const GithubCommit = (props) => {
                     )
                     : (
                         <div>
-                            <button className='text-danger border bg-secondary' onClick={changeButton}>Change page</button>
+                            <button className='text-danger border bg-secondary h2' onClick={changeButton}>Change page</button>
                             <div className='border bg-light p-5'> {commit.map((res, index) =>
                                 <li key={index}>{res.commit.committer.date}
                                     <div className='h3 my-3 text-capitalize border-bottom'>{res.commit.message}</div>

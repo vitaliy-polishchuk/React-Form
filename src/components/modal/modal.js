@@ -1,6 +1,6 @@
 import React, {useState}  from 'react';
 
-import '../modal/style.css'
+import './modal.css'
 import {Button, Modal} from "react-bootstrap";
 
 
@@ -13,10 +13,10 @@ const Modalapp = (props) => {
   return (
       <>
           <Button variant="primary" onClick={handleShow}>
-              Launch demo modal
+              Launch demo modal window
           </Button>
 
-          <Modal show={show} onHide={handleClose} animation={false}>
+          <Modal className='first_modal_button' show={show} onHide={handleClose} animation={false}>
               <Modal.Header closeButton>
                   <Modal.Title>Modal heading</Modal.Title>
               </Modal.Header>

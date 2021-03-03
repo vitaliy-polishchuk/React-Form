@@ -8,22 +8,26 @@ import Privat from "../privat/privat";
 import GithubCommit from "../githubCommit/githubCommit";
 import Test from "../test/test";
 import Photos from "../photos/photos";
+import TopHeader from "../topHeader/topHeader";
+import TopContent from "../topContent/topContent";
 
 const Container = (props) => {
     return (
-        <BrowserRouter>
-            <div className="container">
-                <Route exact path='/' component={FormRegistration}/>
-                <Switch>
-                    <Route path='/login' component={FormLogin}/>
-                    <Route path='/fpass' component={ForgotPass}/>
-                    <Route path='/privat' component={Privat}/>
-                    <Route path='/api' component={GithubCommit}/>
-                    <Route path='/test' component={Test}/>
-                    <Route path='/photos' component={Photos}/>
-                </Switch>
-            </div>
-        </BrowserRouter>
+
+        <div className="container">
+
+            <Route path='/' component={TopContent}/>
+            <Switch>
+                <Route path='/regis' component={FormRegistration}/>
+                <Route path='/login' component={FormLogin}/>
+                <Route path='/forgot_pass' component={ForgotPass}/>
+                <Route path='/privat' component={Privat}/>
+                <Route path='/api' component={GithubCommit}/>
+                <Route path='/test' component={Test}/>
+                <Route path='/photos' component={Photos}/>
+            </Switch>
+        </div>
+
     )
 }
 

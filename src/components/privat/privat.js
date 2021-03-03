@@ -7,7 +7,6 @@ import {NavLink} from "react-router-dom";
 const Privat = () => {
   return(
       <div className='Privat bg-info p-5'>
-          <div className='h3'> <NavLink to='/'>Home</NavLink> </div>
         <InputNumber/>
         <App2/>
       </div>

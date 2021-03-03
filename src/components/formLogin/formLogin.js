@@ -74,10 +74,10 @@ const FormLogin = () => {
                 </div>
                 <div className="card-footer">
                     <div className="d-flex justify-content-center links">
-                        Don't have an account?<NavLink to="">Sign Up</NavLink>
+                        Don't have an account?<NavLink to="regis">Sign Up</NavLink>
                     </div>
                     <div className="d-flex justify-content-center">
-                        <NavLink to='/fpass'>Forgot your password?</NavLink>
+                        <NavLink to='forgot_pass'>Forgot your password?</NavLink>
                     </div>
                 </div>
             </div>
