@@ -1,15 +1,13 @@
 import React, {useEffect, useState} from "react";
 import {NavLink} from "react-router-dom";
+import {useOriginalTitle} from "../../hooks/useOriginalTitle";
 
 const Test = (props) => {
     const [count, setCount] = useState(0);
-
+    useOriginalTitle()
 
     useEffect(() => {
         document.title = `Вы нажали ${count} раз`;
-        if(URL !== 'localhost:3000/test'){
-            document.title = "React"
-        }else document.title = `Вы нажали ${count} раз`;
     }, [count]);
 
     return (

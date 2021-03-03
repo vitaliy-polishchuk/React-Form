@@ -6,7 +6,7 @@ import {BrowserRouter} from "react-router-dom";
 
 
 window.Users = [
-    { login: 'admin@gmail.com', password: 'admin', phone: 9379992 }
+    {login: 'admin@gmail.com', password: 'admin', phone: 9379992}
 ]
 
 window.loggedUserEmail = ''
@@ -40,9 +40,9 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
-            <TopHeader/>
-            <Container/>
-                </BrowserRouter>
+                <TopHeader/>
+                <Container/>
+            </BrowserRouter>
         </div>
     );
 }
