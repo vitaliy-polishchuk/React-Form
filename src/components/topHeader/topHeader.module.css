@@ -11,12 +11,9 @@ margin-bottom: 20px;
 }
 
 .img {
-    width: 2600px;
+    max-width: 2600px;
     height: 300px;
     background: url("https://upload.wikimedia.org/wikipedia/commons/1/14/Panorama_puy_de_dome_sud.jpg") center 80%;
     background-size: cover;
 }
-.navlink{
-    text-decoration: none;
-    color: white;
-}
+

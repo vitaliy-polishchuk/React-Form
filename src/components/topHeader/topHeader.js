@@ -9,13 +9,20 @@ const TopHeader = (props) => {
         <div className={s.img}>
             <div className={s.mainflex}>
 
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='home'>React</NavLink></div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right'  to='regis'>Sign Up</NavLink></div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right'  to='login'>Sign In</NavLink></div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='api'>Hooks API</NavLink></div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='test'>Test link</NavLink></div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right'  to='photos'>Photos</NavLink></div>
-                <div><NavLink className='text-danger text-decoration-none px-3 border-right'  to='login'>Private Page</NavLink></div>
+                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='home'>React</NavLink>
+                </div>
+                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='regis'>Sign Up</NavLink>
+                </div>
+                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='login'>Sign In</NavLink>
+                </div>
+                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='api'>Hooks API</NavLink>
+                </div>
+                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='test'>Test
+                    link</NavLink></div>
+                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='photos'>Photos</NavLink>
+                </div>
+                <div><NavLink className='text-danger text-decoration-none px-3 border-right' to='login'>Private Page</NavLink>
+                </div>
                 <div className='px-3'><Modalapp/></div>
             </div>
             <div className='display-4 text-white-50 text-center my-5'>REACT</div>
