@@ -12,10 +12,9 @@
     margin-bottom: 50px;
 }
 .inp{
+
+}
+.label{
     display: block;
-    width: 300px;
-    font-size: 30px;
-    height: 80px;
-    border-radius: 5px;
-    background-color: white;
+    font-size: 20px;
 }

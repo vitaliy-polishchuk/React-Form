@@ -49,8 +49,8 @@ const TopContent = (props) => {
                 sunt tempora? Commodi?
             </div>
             <div className={s.author}>Author: Amy Schumer</div>
-            {/*<CreatePost/>*/}
-            {/*<TopContentAddPost/>*/}
+            <CreatePost/>
+            <TopContentAddPost/>
         </div>
     </div>;
 }
