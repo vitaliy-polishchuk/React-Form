@@ -3,6 +3,7 @@
 margin-bottom: 20px;
 }
 .mainflex{
+
     display: flex;
     flex-direction: row;
     font-size: 25px;

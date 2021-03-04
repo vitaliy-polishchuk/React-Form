@@ -15,9 +15,8 @@ const Container = (props) => {
 
         <div className="container">
 
-
             <Switch>
-                <Route path='/home' component={TopContent}/>
+                <Route exact path='/' component={TopContent}/>
                 <Route path='/regis' component={FormRegistration}/>
                 <Route path='/login' component={FormLogin}/>
                 <Route path='/forgot_pass' component={ForgotPass}/>

@@ -1,20 +1,14 @@
 import React from 'react';
 import s from './topContent.module.css'
 import TopContentAddPost from "../topContentAddPost";
+import {dateNow} from "../createPost";
+import CreatePost from "../createPost/createPost";
 
 
 const TopContent = (props) => {
 
 
 
-    const dateNow = () => {
-        const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        const d = new Date();
-        const mon = month[d.getMonth()];
-        const day = d.getDate();
-        const year = d.getFullYear();
-        return mon + " " + day + ", " + year;
-    }
     return <div className="component-top-content">
         <div className={s.container}>
             <div className='d-flex flex-row justify-content-between py-3'>
@@ -55,7 +49,8 @@ const TopContent = (props) => {
                 sunt tempora? Commodi?
             </div>
             <div className={s.author}>Author: Amy Schumer</div>
-            <TopContentAddPost/>
+            {/*<CreatePost/>*/}
+            {/*<TopContentAddPost/>*/}
         </div>
     </div>;
 }
