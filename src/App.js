@@ -2,7 +2,9 @@ import React from 'react'
 import './App.css';
 import Container from "./components/container/container";
 import TopHeader from "./components/topHeader/topHeader";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
+
+
 
 
 window.Users = [
@@ -39,10 +41,10 @@ export const isUserLoggedIn = (email) => {
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
+            <Router>
                 <TopHeader/>
                 <Container/>
-            </BrowserRouter>
+            </Router>
         </div>
     );
 }
