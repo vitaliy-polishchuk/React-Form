@@ -8,7 +8,7 @@ const TopHeader = (props) => {
     return <div className={s.component_header}>
         <div className={s.img}>
 
-            <div className={s.mainflex}>
+            <div className='navbar navbar-expand-lg navbar-light '>
 
                 <div><NavLink className='text-light text-decoration-none px-3 border-right' to='/'>React</NavLink>
                 </div>
@@ -22,7 +22,7 @@ const TopHeader = (props) => {
                     link</NavLink></div>
                 <div><NavLink className='text-light text-decoration-none px-3 border-right' to='photos'>Photos</NavLink>
                 </div>
-                <div><NavLink className='text-danger text-decoration-none px-3 border-right' to='login'>Private
+                <div><NavLink className='text-danger  text-decoration-none px-3 border-right' to='login'>Private
                     Page</NavLink>
                 </div>
 

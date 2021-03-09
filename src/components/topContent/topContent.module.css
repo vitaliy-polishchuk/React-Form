@@ -4,10 +4,11 @@
 }
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
     height: auto;
     margin-bottom: 100px;
 }
+
 
 .author {
     height: 50px;

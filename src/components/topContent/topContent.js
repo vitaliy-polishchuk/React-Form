@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './topContent.module.css'
 import TopContentAddPost from "../topContentAddPost";
 import {dateNow} from "../createPost";
@@ -6,6 +6,7 @@ import CreatePost from "../createPost/createPost";
 
 
 const TopContent = (props) => {
+    const [post, setPost] = useState('')
 
 
     return <div className="component-top-content">
@@ -48,8 +49,8 @@ const TopContent = (props) => {
                 sunt tempora? Commodi?
             </div>
             <div className={s.author}>Author: Amy Schumer</div>
-            <CreatePost/>
-            <TopContentAddPost/>
+            <CreatePost data={post}/>
+            <TopContentAddPost parentCallback={(newPosts)=>setPost(newPosts)}/>
         </div>
     </div>;
 }

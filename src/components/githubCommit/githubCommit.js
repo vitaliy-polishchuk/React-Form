@@ -50,9 +50,9 @@ const GithubCommit = (props) => {
                     : (
                         <div>
                             <button className='text-danger border bg-secondary h2' onClick={changeButton}>Change page</button>
-                            <div className='border bg-light p-5'> {commit.map((res, index) =>
+                            <div className='border bg-light p-3'> {commit.map((res, index) =>
                                 <li key={index}>{res.commit.committer.date}
-                                    <div className='h3 my-3 text-capitalize border-bottom'>{res.commit.message}</div>
+                                    <div className='h6 my-2 text-capitalize border-bottom'>{res.commit.message}</div>
                                 </li>
                             )}
                             </div>

@@ -48,7 +48,6 @@
     "case-sensitive-paths-webpack-plugin": "^2.3.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "formik": "^2.2.6",
-    "json-schema": "^0.3.0",
-    "react-router-dom": "^5.2.0"
+    "json-schema": "^0.3.0"
   }
 }

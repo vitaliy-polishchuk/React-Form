@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-pre {
-    text-align: center;
-    color: rgba(74, 147, 170, 1);
-}
-
 .content {
     max-width: 500px;
     margin: 20px auto;
