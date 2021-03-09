@@ -8,7 +8,6 @@ import CreatePost from "../createPost/createPost";
 const TopContent = (props) => {
 
 
-
     return <div className="component-top-content">
         <div className={s.container}>
             <div className='d-flex flex-row justify-content-between py-3'>

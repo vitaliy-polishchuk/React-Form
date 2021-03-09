@@ -4,7 +4,7 @@ import './modal.css'
 import {Button, Modal} from "react-bootstrap";
 
 
-const Modalapp = (props) => {
+const ModalApp = (props) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -34,4 +34,4 @@ const Modalapp = (props) => {
   );
 }
 
-export default Modalapp
+export default ModalApp

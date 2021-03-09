@@ -1,9 +1,9 @@
 import React from 'react';
 import './formLogin.css'
 import {NavLink} from "react-router-dom";
-import {Formik, Form, Field} from 'formik';
 import * as Yup from 'yup';
 import {isUserLoggedIn, loginUser} from "../../App";
+import {Formik, Form, Field} from 'formik';
 
 
 const SignupSchema = Yup.object().shape({

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './topHeader.module.css'
 import {NavLink} from "react-router-dom";
-import Modalapp from "../modal/modal";
+import ModalApp from "../modal/modal";
 
 
 const TopHeader = (props) => {
@@ -26,7 +26,7 @@ const TopHeader = (props) => {
                     Page</NavLink>
                 </div>
 
-                <div className='px-3'><Modalapp/></div>
+                <div className='px-3'><ModalApp/></div>
             </div>
 
             <div className='display-4 text-white-50 text-center my-5'>REACT</div>
