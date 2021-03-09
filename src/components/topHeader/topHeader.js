@@ -10,19 +10,19 @@ const TopHeader = (props) => {
 
             <div className='navbar navbar-expand-lg navbar-light '>
 
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='/'>React</NavLink>
+                <div><NavLink className='text-info text-decoration-none px-3 border-right' to='/'>React</NavLink>
                 </div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='regis'>Sign Up</NavLink>
+                <div><NavLink className='text-info text-decoration-none px-3 border-right' to='regis'>Sign Up</NavLink>
                 </div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='login'>Sign In</NavLink>
+                <div><NavLink className='text-info text-decoration-none px-3 border-right' to='login'>Sign In</NavLink>
                 </div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='api'>Hooks API</NavLink>
+                <div><NavLink className='text-info text-decoration-none px-3 border-right' to='api'>Hooks API</NavLink>
                 </div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='test'>Test
+                <div><NavLink className='text-info text-decoration-none px-3 border-right' to='test'>Test
                     link</NavLink></div>
-                <div><NavLink className='text-light text-decoration-none px-3 border-right' to='photos'>Photos</NavLink>
+                <div><NavLink className='text-info text-decoration-none px-3 border-right' to='photos'>Photos</NavLink>
                 </div>
-                <div><NavLink className='text-danger  text-decoration-none px-3 border-right' to='login'>Private
+                <div><NavLink className='text-danger text-decoration-none px-3 border-right' to='login'>Private
                     Page</NavLink>
                 </div>
 
