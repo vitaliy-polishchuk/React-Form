@@ -6,7 +6,7 @@ import CreatePost from "../createPost/createPost";
 
 
 const TopContent = (props) => {
-    const [post, setPost] = useState('')
+    const [posts, setPosts] = useState([]);
 
 
     return <div className="component-top-content">
@@ -49,8 +49,8 @@ const TopContent = (props) => {
                 sunt tempora? Commodi?
             </div>
             <div className={s.author}>Author: Amy Schumer</div>
-            <CreatePost data={post}/>
-            <TopContentAddPost parentCallback={(newPosts)=>setPost(newPosts)}/>
+            <CreatePost data={posts}/>
+            <TopContentAddPost parentCallback={(newPost)=>setPosts([...posts, newPost])}/>
         </div>
     </div>;
 }
